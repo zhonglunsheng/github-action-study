@@ -19,6 +19,9 @@ jobs:
           lscpu
           free -h
           curl www.google.com
+          pip install --upgrade setuptools
+          python -m ensurepip --upgrade
+          
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: test pip install
         uses: BSFishy/pip-action@v1
