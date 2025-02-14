@@ -15,11 +15,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-          uname -a
-          lscpu
-          free -h
-          curl www.google.com
-          apt install python3.12-dev
           pip install --upgrade setuptools
           
       - run: echo "🍏 This job's status is ${{ job.status }}."
