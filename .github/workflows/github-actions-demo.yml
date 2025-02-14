@@ -19,8 +19,8 @@ jobs:
           lscpu
           free -h
           curl www.google.com
+          apt install python3.12-dev
           pip install --upgrade setuptools
-          python -m ensurepip --upgrade
           
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: test pip install
