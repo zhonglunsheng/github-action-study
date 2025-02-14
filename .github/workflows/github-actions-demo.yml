@@ -18,4 +18,5 @@ jobs:
           uname -a
           lscpu
           free -h
+          curl www.google.com
       - run: echo "🍏 This job's status is ${{ job.status }}."
